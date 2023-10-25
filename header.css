@@ -1,0 +1,36 @@
+.cabecalho{
+    background-color: var(--cor-cabecalho);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem, .container__frase {
+    padding: 1em;
+}
+
+.container__titulo, .container__frase{
+    display: none;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.container__botao:checked ~ .lista-menu {
+    display: block;
+}
+
+lista-menu__titulo, 
+.lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+}
